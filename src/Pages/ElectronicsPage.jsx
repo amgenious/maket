@@ -1,12 +1,12 @@
 import React from 'react'
-import { ClothesProduct } from '../Components/ClothesProduct'
 import { MenuandSearch } from '../Components/MenuandSearch'
+import { ElectronicsProduct } from '../Components/ElectronicsProduct'
 
-export const ClothesPage = () => {
+export const ElectronicsPage = () => {
   return (
     <div className='w-[100%]'>
       <MenuandSearch />
-      <ClothesProduct />
+      <ElectronicsProduct />
     </div>
   )
 }

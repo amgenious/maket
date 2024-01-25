@@ -4,19 +4,9 @@ import { Link } from "react-router-dom";
 export const CartPage = () => {
   const [firstnumber, setFirstnumber] = useState(0);
   return (
-    <div role="tablist" className="tabs tabs-lifted bg-slate-800 p-3 h-fit border w-screen ">
-      <input
-        type="radio"
-        name="my_tabs_2"
-        role="tab"
-        className="tab text-white"
-        aria-label="Cart"
-        checked
-        readOnly
-      />
+    <div className="bg-slate-800 p-3 h-fit w-[100%]">
       <div
-        role="tabpanel"
-        className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+        className=" bg-base-100 border-base-300 rounded-box p-6"
       >
         <div className="flex justify-between">
           <h1 className="text-3xl text-white font-bold">Cart</h1>
@@ -27,7 +17,6 @@ export const CartPage = () => {
         {/* This is where the content will be displayed */}
         <div className="overflow-x-auto">
           <table className="table">
-            {/* head */}
             <thead>
               <tr>
                 <th>Product </th>
@@ -38,7 +27,6 @@ export const CartPage = () => {
               </tr>
             </thead>
             <tbody>
-              {/* row 1 */}
               <tr className="bg-slate-600 text-white">
                 <td>
                   <div className="flex items-center gap-3">
@@ -92,13 +80,15 @@ export const CartPage = () => {
               </tr>
             </tbody>
           </table>
-        </div>
-          <div className="mt-3 flex justify-between flex-wrap p-2">
+        </div> 
+           <div className="mt-3 flex justify-between flex-wrap w-[100%] gap-1 p-2">
+            <Link to={'/'}>
             <div className="bg-primary h-fit py-2 px-2 cursor-pointer hover:bg-blue-800 text-white rounded-lg">
               Continue Shopping
             </div>
+            </Link>
             <div className="bg-slate-400 p-2">
-                <div className="w-[500px] p-2 flex text-white justify-between">
+                <div className=" p-2 flex text-white justify-between">
                   <p className="font-bold">Total</p>
                   <p>Ghc 100</p>
                 </div>

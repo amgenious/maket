@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className=''>
        <div className="navbar bg-base-300 rounded-xl">
   <div className="flex-1">
         <Link to={'/'}>
@@ -18,7 +18,7 @@ export const Navbar = () => {
           <span className="badge badge-sm indicator-item bg-primary"></span>
         </div>
       </div>
-      <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+      <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-200 shadow">
         <div className="card-body">
           <span className="font-bold text-lg">8 Items</span>
           <span className="text-info">Subtotal: $999</span>
