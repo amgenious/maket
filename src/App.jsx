@@ -3,10 +3,9 @@ import { BrowserRouter,  Route,Routes} from 'react-router-dom';
 import { CartPage } from "./Pages/CartPage";
 import {CheckoutPage} from "./Pages/CheckoutPage"
 import { HomePage } from "./Pages/HomePage";
-import { ClothesPage } from "./Pages/ClothesPage";
-import ShoesPage from "./Pages/ShoesPage";
-import { ElectronicsPage } from "./Pages/ElectronicsPage";
+import { ProductsPage } from "./Pages/ProductsPage";
 import { Footer } from "./Components/Footer";
+import { ShopsPage } from "./Pages/ShopsPage";
 
 function App() {
 
@@ -17,9 +16,8 @@ function App() {
       <div>
         <Routes>
         <Route path="/"  element={<HomePage />} />
-        <Route path="/clothes"  element={<ClothesPage />} />
-        <Route path="/shoes"  element={<ShoesPage />} />
-        <Route path="/electronics"  element={<ElectronicsPage />} />
+        <Route path="/shops"  element={<ShopsPage />} />
+        <Route path="/products"  element={<ProductsPage />} />
         <Route path="/cart"  element={<CartPage />} />
         <Route path="/checkout"  element={<CheckoutPage />} />
         </Routes>
